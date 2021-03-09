@@ -2895,10 +2895,8 @@ var _getItemAt,
 
 		img.style.width = w + 'px';
 		img.style.height = h + 'px';
-		img.style.backgroundColor = 'yellow';
-		console.log('Item', item);
-		console.log('Container', item.container);
 
+		// Custom fix to resize secondary images
 		var secondaryImages = item.container.getElementsByClassName('swiper-floor-option-image');
 
 		for (var i = 0; i < secondaryImages.length; i++) {
