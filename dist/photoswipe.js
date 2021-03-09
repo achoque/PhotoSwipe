@@ -2895,9 +2895,17 @@ var _getItemAt,
 
 		img.style.width = w + 'px';
 		img.style.height = h + 'px';
-		img.style.backgroundColor = 'red';
+		img.style.backgroundColor = 'yellow';
 		console.log('Item', item);
 		console.log('Container', item.container);
+
+		var secondaryImages = item.container.getElementsByClassName('swiper-floor-option-image');
+
+		for (var i = 0; i < secondaryImages.length; i++) {
+			var secondaryImage = secondaryImages[i];
+			secondaryImage.style.width = w + 'px';
+			secondaryImage.style.height = h + 'px';
+		}
 	},
 	_appendImagesPool = function() {
 
