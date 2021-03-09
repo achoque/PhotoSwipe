@@ -204,6 +204,7 @@ var _getItemAt,
 
 		img.style.width = w + 'px';
 		img.style.height = h + 'px';
+		img.style.backgroundColor = 'red';
 		console.log('Item', item);
 		console.log('Container', item.container);
 	},
